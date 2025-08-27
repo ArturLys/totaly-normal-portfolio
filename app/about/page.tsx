@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { toast } from 'sonner'
 import Image from 'next/image'
 import { useClick } from '../context/globalContext'
+import Head from 'next/head'
 
 export default function AboutPage() {
   const { increment } = useClick()
@@ -43,9 +44,12 @@ export default function AboutPage() {
 
   return (
     <div className='container mx-auto px-4 py-16'>
+      <Head>
+        <link rel='preload' as='image' href='/1.png' />
+        <link rel='preload' as='image' href='/2.png' />
+      </Head>
       {/* jumpscare div */}
       {visible && <Image src={`/${visible}.png`} alt={visible} layout='fill' objectFit='cover' />}
-
       <h1 className='mb-8 text-center text-4xl font-bold'>About Me</h1>
       <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
         <div>
