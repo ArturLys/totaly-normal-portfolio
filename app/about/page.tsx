@@ -45,8 +45,8 @@ export default function AboutPage() {
   return (
     <div className='container mx-auto px-4 py-16'>
       <Head>
-        <link rel='preload' as='image' href='/1.png' />
-        <link rel='preload' as='image' href='/2.png' />
+        <link rel='preload' as='image' href='/femboy.png' />
+        <link rel='preload' as='image' href='/demyan.png' />
       </Head>
       {/* jumpscare div */}
       {visible && <Image src={`/${visible}.png`} alt={visible} layout='fill' objectFit='cover' />}
