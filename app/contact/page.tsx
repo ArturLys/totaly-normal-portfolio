@@ -36,6 +36,7 @@ export default function ContactPage() {
               id='name'
               type='text'
               placeholder='Your Name'
+              required
               onChange={() => {
                 playRandomMoan()
                 increment()
@@ -50,6 +51,7 @@ export default function ContactPage() {
               id='email'
               type='email'
               placeholder='Your Email'
+              required
               onChange={() => {
                 playRandomMoan()
                 increment()
@@ -63,6 +65,7 @@ export default function ContactPage() {
             <Textarea
               id='message'
               placeholder='Your Message'
+              required
               onChange={() => {
                 playRandomMoan()
                 increment()
